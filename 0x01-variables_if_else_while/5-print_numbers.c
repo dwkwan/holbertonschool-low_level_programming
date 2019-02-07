@@ -3,7 +3,7 @@
  * main - returns 0
  *
  * Description - main returns 0
- * putchar - Prints each prints all single digit numbers of base 10
+ * printf - Prints each prints all single digit numbers of base 10
  * Return: 0
  */
 int main(void)
