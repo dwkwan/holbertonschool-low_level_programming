@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_times_table - writes a function that prints prints the n times table
+ * print_times_table - writes a function that prints the n times table
  * @n: the n times table
  */
 void print_times_table(int n)
