@@ -17,8 +17,9 @@ void fizz_buzz(void)
 {
 	int j;
 
-	for (j = 1 ; j <= 100 ; j++)
+	for (j = 1 ; j <= 99 ; j++)
 	{
+		{
 		if (j % 3 == 0 && j % 5 != 0)
 			printf("Fizz ");
 		else if (j % 5 == 0 && j % 3 != 0)
@@ -27,6 +28,8 @@ void fizz_buzz(void)
 			printf("FizzBuzz ");
 		else
 			printf("%i ", j);
+		}
 	}
+	printf("Buzz");
 	printf("\n");
 }
