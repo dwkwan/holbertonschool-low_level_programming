@@ -5,17 +5,14 @@
  *
  * Return: Always 0
  */
-
 int main(void)
 {
 	fizz_buzz();
 	return (0);
 }
-
 /**
  * fizz_buzz - prints the numbers from 1 to 100
  */
-
 void fizz_buzz(void)
 {
 	int j;
@@ -28,7 +25,8 @@ void fizz_buzz(void)
 			printf("Buzz ");
 		else if (j % 5 == 0 && j % 3 == 0)
 			printf("FizzBuzz ");
-			else
-				printf("%d ", j);
+		else
+			printf("%i ", j);
 	}
+	printf("\n");
 }
