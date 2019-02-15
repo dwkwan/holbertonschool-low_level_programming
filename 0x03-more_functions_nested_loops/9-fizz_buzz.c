@@ -29,7 +29,6 @@ void fizz_buzz(void)
 		else if (j % 5 == 0 && j % 3 == 0)
 			printf("FizzBuzz ");
 			else
-				printf("%i ", j);
+				printf("%d ", j);
 	}
-	printf("\n");
 }
