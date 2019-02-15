@@ -1,8 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-
-void fizz_buzz(void);
-
 /**
  * main - entry point to program
  *
