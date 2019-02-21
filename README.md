@@ -1,1 +1,1 @@
-This repository contains the projects for holbertonschool-low_level_programming.
+This repository contains the projects for holbertonschool-low_level_programming
