@@ -12,7 +12,7 @@ char *string_toupper(char *s)
 
 	for (c = 0; c < len; c++)
 	{
-		if (s[c] > 'a' && s[c] < 'z')
+		if (s[c] >= 'a' && s[c] <= 'z')
 			s[c] = s[c] - 32;
 	}
 	return (s);
