@@ -1,5 +1,9 @@
 #include "holberton.h"
-
+/**
+ * leet - capitalizes all words of a string
+ * @s: pointer to string
+ * Return: the pointer to the string
+ */
 char *leet(char *s)
 {
 	int c, j;
@@ -22,18 +26,3 @@ char *leet(char *s)
 
 	return (s);
 }
-
-/**
- * _strlen - returns the length of a string
- * @s: pointer to string
- *
- * Return: The length of the string
- */
-	int _strlen(char *s)
-	{
-		int c = 0;
-
-		while (s[c] != '\0')
-			c++;
-		return (c);
-	}
