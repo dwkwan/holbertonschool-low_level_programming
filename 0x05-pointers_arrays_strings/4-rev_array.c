@@ -8,7 +8,7 @@ int _strlen(char *s);
 void reverse_array(int *a, int n)
 {
 	int c, d;
-	int array[1000];
+	int array[n];
 	int g = n - 1;
 
 	for (d = 0; d < n; d++, g--)
