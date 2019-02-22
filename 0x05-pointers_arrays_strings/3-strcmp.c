@@ -9,7 +9,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int c;
 
-	if (*s1 == *s2)
+	if (s1 == s2)
 		return (0);
 
 	for (c = 0; s1[c] == s2[c]; c++)
