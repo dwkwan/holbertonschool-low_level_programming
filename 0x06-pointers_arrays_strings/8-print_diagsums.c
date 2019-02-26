@@ -7,14 +7,16 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int j, m;
+	int  m;
+	int j = size - 1;
 	int diagright = 0;
 	int diagleft = 0;
 
-	for (m = 0; m < (size * size); m = m + (size + 1))
+	for (m = 0; m < (size * size);
+	     m = m + (size + 1), j = j + (size - 1))
+	{
 		diagleft += a[m];
-	for (j = size - 1; j < (size * size)
-		     && j + (size - 1) < (size * size); j = j + (size - 1))
 		diagright += a[j];
+	}
 	printf("%i, %i \n", diagleft, diagright);
 }
