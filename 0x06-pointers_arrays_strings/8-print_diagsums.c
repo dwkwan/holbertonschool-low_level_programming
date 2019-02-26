@@ -18,5 +18,5 @@ void print_diagsums(int *a, int size)
 		diagleft += a[m];
 		diagright += a[j];
 	}
-	printf("%i, %i \n", diagleft, diagright);
+	printf("%i, %i\n", diagleft, diagright);
 }
