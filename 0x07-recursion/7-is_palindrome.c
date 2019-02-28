@@ -28,6 +28,12 @@ int compare(int length, char *s, int i)
 		return (1);
 	return (compare(length, s, i + 1));
 }
+/**
+ * is_palindrome -  returns 1 if a string is a palindrome and 0 if not.
+ * @s: string to check
+ *
+ * Return: return 1, otherwise 0
+ */
 int is_palindrome(char *s)
 {
 	if (*s == '\0')
