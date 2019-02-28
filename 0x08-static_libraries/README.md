@@ -1,0 +1,1 @@
+This project contains 0x08. C - Static libraries tasks.
