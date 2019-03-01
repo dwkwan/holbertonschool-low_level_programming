@@ -1,1 +1,1 @@
-This project contains 0x08. C - Static libraries tasks.
+This project contains 0x08. C - Static libraries tasks. It contains a script that creates a static library. 
