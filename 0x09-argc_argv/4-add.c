@@ -2,22 +2,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - adds positive numbe rs
+ * main - adds positive numbers
  * @argv: array of pointers to strings
  * @argc: argument count
+ *
  * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
-	int i, c, j;
+	int i, j, z;
 	int sum = 0;
 
-	for (c = 1; *argv + c != argv[argc]; c++)
+	for (j = 1; j < argc; j++)
 	{
-		for (j = 0; **argv + j != '\0'; j++)
+		for (z = 0; argv[j][z] != '\0'; z++)
 		{
-			if (**argv + j <= '0'
-			    && **argv + j >= '9')
+			if (argv[j][z] < '0'
+			    || argv[j][z] > '9')
 			{
 				printf("Error\n");
 				return (1);
@@ -25,14 +26,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	for (i = 1; i < argc; i++)
-	{
-		if (atoi(argv[i]) == 0)
-		{
-			printf("Error\n");
-			return (1);
-			}
 		sum += atoi(argv[i]);
-	}
 	printf("%d\n", sum);
 	return (0);
 }
