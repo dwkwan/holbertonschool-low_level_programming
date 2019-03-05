@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	cents = atoi(argv[1]);
 	if (cents < 0)
 	{
-		printf("Error\n");
+		printf("0\n");
 	}
 	for (i = 0; i < 5; i++)
 	{
