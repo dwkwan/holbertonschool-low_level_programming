@@ -10,8 +10,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *a;
 	unsigned int i, j, k, p, combolen;
-	unsigned int len1 = 0;
-	unsigned int len2 = 0;
+	unsigned int len1 = 0, len2 = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,7 +22,6 @@ char *str_concat(char *s1, char *s2)
 		len1++;
 		j++;
 	}
-
 	k = 0;
 	while (*(s2 + k) != '\0')
 	{
@@ -31,7 +29,6 @@ char *str_concat(char *s1, char *s2)
 		k++;
 	}
 	combolen = len1 + len2;
-
 	a = malloc((combolen + 1) * sizeof(char));
 	if (a == NULL)
 		return (NULL);
