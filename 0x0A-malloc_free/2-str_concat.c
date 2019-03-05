@@ -16,19 +16,19 @@ char *str_concat(char *s1, char *s2)
 	j = 0;
 	while (*(s1 + j) != '\0')
 	{
-		len1 ++;
-		j ++;
+		len1++;
+		j++;
 	}
 
 	k = 0;
 	while (*(s2 + k) != '\0')
 	{
-		len2 ++;
-		k ++;
+		len2++;
+		k++;
 	}
 	combolen = len1 + len2;
 
-	a = malloc(combolen * sizeof(char));
+	a = malloc((combolen + 1) * sizeof(char));
 	if (a == NULL)
 		return (NULL);
 	i = 0;
