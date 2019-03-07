@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		z = len1;
 		r = 0;
-		while (r <= n)
+		while (r < n)
 		{
 			*(memptr + z) = *(s2 + r);
 			z++;
