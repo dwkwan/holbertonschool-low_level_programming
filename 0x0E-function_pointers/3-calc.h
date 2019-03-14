@@ -1,11 +1,11 @@
 #ifndef _3_CALC_H
 #define _3_CALC_H
 
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int (*get_op_func(char *s))(int, int);
-int _strcmp(char *s1, char *s2);
 
 /**
  * struct op - Struct op
