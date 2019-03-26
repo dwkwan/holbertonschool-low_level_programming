@@ -1,14 +1,19 @@
 #include "lists.h"
+/**
+ * listint_len - returns the number of elements in a linkedlisti\nt_t list
+* @h: a variable that points to a listint_t struct
+* Return: number of elements
+*/
 size_t listint_len(const listint_t *h)
 {
-        int counter = 0;
+	int counter = 0;
 
-        while (h != NULL)
-        {
-                counter++;
-                h = h->next;
-        }
-        return (counter);
+	while (h != NULL)
+	{
+		counter++;
+		h = h->next;
+	}
+	return (counter);
 }
 /**
  * delete_nodeint_at_index - deletes the node at index of a listint_t list
@@ -20,8 +25,8 @@ size_t listint_len(const listint_t *h)
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	size_t length;
-        unsigned int i;
-        listint_t *prev_node = *head;
+	unsigned int i;
+	listint_t *prev_node = *head;
 	listint_t *tmp;
 
 	length = listint_len(*head);
@@ -40,6 +45,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	tmp = prev_node;
 	prev_node = prev_node->next;
 	tmp->next = prev_node->next;
-	free (prev_node);
+	free(prev_node);
 	return (1);
 }

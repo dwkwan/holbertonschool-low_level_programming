@@ -1,14 +1,20 @@
 #include "lists.h"
+/**
+ * listint_len - returns the number of elements in a linkedlisti\
+nt_t list
+* @h: a variable that points to a listint_t struct
+* Return: number of elements
+*/
 size_t listint_len(const listint_t *h)
 {
-        int counter = 0;
+	int counter = 0;
 
-        while (h != NULL)
-        {
-                counter++;
-                h = h->next;
-        }
-        return (counter);
+	while (h != NULL)
+	{
+		counter++;
+		h = h->next;
+	}
+	return (counter);
 }
 /**
  * get_nodeint_at_index - returns the nth node of listint_t list
