@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int mask = 32768;
+	unsigned long int mask = 32768;
 	int flag = 0;
 
 	if (n == 0)
