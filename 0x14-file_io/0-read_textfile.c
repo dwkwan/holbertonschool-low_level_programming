@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * read_textfile - Reads a text file and prints iti to the POSIX stdout
- * @filename - text file to read
- * @letters - number of letters it should read and print
+ * @filename: text file to read
+ * @letters: number of letters it should read and print
  *
  * Return: number of letters it could read and print
  */
@@ -25,16 +25,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	readcount = read(fd, buffer, letters);
 	if (readcount == -1)
 	{
-		free (buffer);
+		free(buffer);
 		return (0);
 	}
 	writecount = write(STDIN_FILENO, buffer, readcount);
 	if (writecount == -1)
 	{
-		free (buffer);
+		free(buffer);
 		return (0);
 	}
-	close (fd);
-	free (buffer);
+	close(fd);
+	free(buffer);
 	return (writecount);
 }
