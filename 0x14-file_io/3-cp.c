@@ -1,8 +1,8 @@
 #include "holberton.h"
-
 /**
  * main - copies the content of a file to another file
- *
+ * @ac: number of arguments
+ * @av: arguments
  * Return: 1 on success , exit 98, 99, 100 on error
  */
 int main(int ac, char **av)
@@ -36,13 +36,13 @@ int main(int ac, char **av)
 	closestatus = close(fd);
 	if (closestatus == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd, %i\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd%i\n", fd);
 		exit(100);
 	}
 	closestatus2 = close(fd2);
 	if (closestatus2 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd%i\n", fd2);
 		exit(100);
 	}
 	return (0);
