@@ -25,21 +25,12 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
 	if (readcount == -1)
-	{
-		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", av[1]);
-		exit(98);
-	}
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	closestatus = close(fd);
 	if (closestatus == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
-	}
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd), exit(100);
 	closestatus2 = close(fd2);
 	if (closestatus2 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
-		exit(100);
-	}
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2), exit(100);
 	return (0);
 }
