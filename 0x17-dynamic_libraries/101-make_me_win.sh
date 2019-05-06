@@ -1,3 +1,3 @@
 #!/bin/bash
-wget https://github.com/dwkwan/holbertonschool-low_level_programming/blob
+gcc -shared -fPIC rand.c -o rand.so
 export LD_PRELOAD=rand.so
