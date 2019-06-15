@@ -17,6 +17,21 @@ void insertion_sort_list(listint_t **list)
 
 	if (!(*list)->next)
 		return;
+	if(!current->next && !(*list)->prev)
+	{
+		if (current->n > (*list)->n)
+			return;
+		else
+		{
+			current->prev = NULL;
+			(*list)->next = NULL;
+			current->next = (*list);
+			(*list)->prev = current;
+			(*list) = current;
+			print_list(*list);
+			return;
+		}
+	}
 	while (current)
 	{
 		tmp = current->prev;
