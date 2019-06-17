@@ -24,9 +24,13 @@ void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 int checklist(listint_t **list, listint_t **current);
-int checkend(listint_t **current, listint_t **tmp, listint_t *list);
+void checkend(listint_t **current, listint_t **tmp, listint_t *list);
 int checkbeg(listint_t **current, listint_t **tmp,
-             listint_t *hold, listint_t **list);
+             listint_t **hold, listint_t **list);
 int checkjuice(listint_t **current, listint_t **tmp,
                 listint_t *list);
+void quick_sort(int *array, size_t size);
+int partition(int *array, size_t start, size_t end, size_t size);
+void realqs(int *array, int start, int end, size_t size);
+
 #endif
