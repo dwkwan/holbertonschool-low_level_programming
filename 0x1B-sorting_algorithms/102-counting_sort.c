@@ -10,7 +10,7 @@
 void counting_sort(int *array, size_t size)
 {
 	int *countarray = NULL, *newarray = NULL;
-	int j, z, key = 0, newposition = 0, value = 0, sum = 0, max = 0;
+	int j, z, key = 0, newposition = 0, sum = 0, max = 0;
 	size_t i, k, y, g;
 
 	if (!array || size < 2)
@@ -21,17 +21,15 @@ void counting_sort(int *array, size_t size)
 			max = array[i];
 	}
 	countarray = malloc((max + 1) * sizeof(int));
+	if (!countarray)
+		return;
 	newarray = malloc((size) * sizeof(int));
+	if (!newarray)
+		return;
 	for (j = 0; j < max; j++)
-	{
 		countarray[j] = 0;
-		newarray[j] = 0;
-	}
 	for (k = 0; k < size; k++)
-	{
-		value = array[k];
-		countarray[value] += 1;
-	}
+		countarray[array[k]] += 1;
 	for (z = 0; z <= max; z++)
 	{
 		sum += countarray[z];
