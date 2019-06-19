@@ -1,0 +1,45 @@
+#include "sort.h"
+/**
+ * counting_sort - sorts an array using the counting sort algorithm
+ *
+ * @array: pointer to integer array
+ * @size: size of integer array
+ *
+ * Return: Nothing
+ */
+void counting_sort(int *array, size_t size)
+{
+	int *countarray = NULL;
+	int j, z, y, value2 = 0, value = 0, sum = 0, max = 0, flag = 0;
+	size_t i, k;
+
+	for (i = 0; i < size; i++)
+	{
+		if (array[i] > max)
+			max = array[i];
+	}
+	countarray = malloc((max + 1) * sizeof(int));
+	for (j = 0; j < max; j++)
+		countarray[j] = 0;
+	for (k = 0; k < size; k++)
+	{
+		value = array[k];
+		countarray[value] += 1;
+	}
+	for (z = 0; z <= max; z++)
+	{
+		sum += countarray[z];
+		countarray[z] = sum;
+	}
+	print_array(countarray, max + 1);
+	for (y = 0; y <= max; y++)
+	{
+		if (countarray[y] != flag)
+		{
+			value2 = countarray[y];
+			array[value2 - 1] = y;
+			flag = value2;
+			countarray[y]++;
+		}
+	}
+}
