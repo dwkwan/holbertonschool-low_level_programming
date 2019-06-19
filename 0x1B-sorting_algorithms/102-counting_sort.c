@@ -9,9 +9,9 @@
  */
 void counting_sort(int *array, size_t size)
 {
-	int *countarray = NULL;
-	int j, z, y, value2 = 0, value = 0, sum = 0, max = 0, flag = 0;
-	size_t i, k;
+	int *countarray = NULL, *newarray = NULL;
+	int j, z, key = 0, newposition = 0, value = 0, sum = 0, max = 0;
+	size_t i, k, y, g;
 
 	for (i = 0; i < size; i++)
 	{
@@ -19,8 +19,12 @@ void counting_sort(int *array, size_t size)
 			max = array[i];
 	}
 	countarray = malloc((max + 1) * sizeof(int));
+	newarray = malloc((size) * sizeof(int));
 	for (j = 0; j < max; j++)
+	{
 		countarray[j] = 0;
+		newarray[j] = 0;
+	}
 	for (k = 0; k < size; k++)
 	{
 		value = array[k];
@@ -32,14 +36,13 @@ void counting_sort(int *array, size_t size)
 		countarray[z] = sum;
 	}
 	print_array(countarray, max + 1);
-	for (y = 0; y <= max; y++)
+	for (y = 0; y < size; y++)
 	{
-		if (countarray[y] != flag)
-		{
-			value2 = countarray[y];
-			array[value2 - 1] = y;
-			flag = value2;
-			countarray[y]++;
-		}
+		key = array[y];
+		newposition = countarray[key];
+		newarray[newposition - 1] = array[y];
+		countarray[key]--;
 	}
+	for (g = 0; g < size; g++)
+		array[g] = newarray[g];
 }
