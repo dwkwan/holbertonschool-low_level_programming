@@ -13,7 +13,7 @@ void counting_sort(int *array, size_t size)
 	int j, z, key = 0, newposition = 0, value = 0, sum = 0, max = 0;
 	size_t i, k, y, g;
 
-	if (size < 2)
+	if (!array || size < 2)
 		return;
 	for (i = 0; i < size; i++)
 	{
@@ -48,4 +48,5 @@ void counting_sort(int *array, size_t size)
 	for (g = 0; g < size; g++)
 		array[g] = newarray[g];
 	free(newarray);
+	free(countarray);
 }
