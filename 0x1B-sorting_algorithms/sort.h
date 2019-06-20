@@ -38,5 +38,8 @@ int checkjuice(listint_t **current, listint_t **tmp,
 int partition(int *array, size_t start, size_t end, size_t size);
 void realqs(int *array, int start, int end, size_t size);
 void counting_sort(int *array, size_t size);
-
+void merge_sort(int *array, size_t size);
+void split_array(int *comparray, size_t left, size_t right, int *array);
+void merge_arrays(int *array, size_t left, size_t middle, size_t right,
+int *comparray);
 #endif
