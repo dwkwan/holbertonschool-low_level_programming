@@ -1,1 +1,1 @@
-This directory contains tasks for the 0x04. Loops, conditions & parsing project
+This directory contains tasks for the C - Sorting algorithms & Big O project
