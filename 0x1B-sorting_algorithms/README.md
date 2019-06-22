@@ -1,1 +1,1 @@
-First push
+This directory contains tasks for the 0x04. Loops, conditions & parsing project
