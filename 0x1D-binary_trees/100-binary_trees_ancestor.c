@@ -47,7 +47,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 					return (first_1);
 				second_2 = second_2->parent;
 			}
-			second_2 = tmp->parent;
+			second_2 = tmp;
 			first_1 = first_1->parent;
 		}
 	}
@@ -62,7 +62,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 					return (second_2);
 				first_1 = first_1->parent;
 			}
-			first_1 = tmp->parent;
+			first_1 = tmp;
 			second_2 = second_2->parent;
 		}
 	}
