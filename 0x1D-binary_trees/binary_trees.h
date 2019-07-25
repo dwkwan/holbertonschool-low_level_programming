@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <math.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -13,6 +14,12 @@
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
  */
+typedef struct binary_tree_stack
+{
+        struct binary_tree_s* tree_node;
+        struct binary_tree_stack* next;
+} BT_stack;
+
 typedef struct binary_tree_s
 {
 	int n;
