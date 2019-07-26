@@ -9,16 +9,11 @@
 bst_t *array_to_bst(int *array, size_t size)
 {
 	bst_t *root = NULL;
-	bst_t *rvalue = NULL;
 	uint i = 0;
 
-	if (!array || size < 1)
+	if (!array)
 		return (NULL);
 	for (i = 0; i < size; i++)
-	{
-		rvalue = bst_insert(&root, array[i]);
-		if (rvalue == NULL)
-			return (NULL);
-	}
+		bst_insert(&root, array[i]);
 	return (root);
 }
