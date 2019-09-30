@@ -40,3 +40,9 @@ This repository contains scripts and programs during the Low Level programming p
 | [0X1C. C - Makefiles](./0x1C-makefiles)
 | [0x1D. C - Binary trees](https://github.com/tuvo1106/0x1D-binary_trees)
 | [0x1E. C - Search Algorithms](./0x1E-search_algorithms)
+
+## Author
+* **David Kwan** - [Github profile](https://github.com/dwkwan), [Twitter profile](https://twitter.com/davidwkwan)
+
+## Acknowledgements
+[Holberton School](https://www.holbertonschool.com/)
