@@ -8,8 +8,8 @@
 
 This repository contains scripts and programs during the Low Level programming portion of the Holberton School curriculum. In these projects, I learned C, basic data structures like arrays and linked lists, sorting algorithms, binary search trees, and much more. Here's the complete list of projects:
 
-| Project | Description |
-| :--- | :--- |
+| Project |
+| :--- |
 | [0x00. C - Hello, World](./0x00-hello_world)
 | [0x01. C - Variables, if, else, while](./0x01-variables_if_else_while)
 | [0x02. C - Functions, nested loops](./0x02-functions_nested_loops)
