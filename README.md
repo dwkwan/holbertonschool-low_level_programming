@@ -42,7 +42,7 @@ This repository contains scripts and programs during the Low Level programming p
 | [0x1E. C - Search Algorithms](./0x1E-search_algorithms)
 
 ## Author
-* **David Kwan** - [Github profile](https://github.com/dwkwan), [Twitter profile](https://twitter.com/davidwkwan)
+**David Kwan** - [Github profile](https://github.com/dwkwan), [Twitter profile](https://twitter.com/davidwkwan)
 
 ## Acknowledgements
 [Holberton School](https://www.holbertonschool.com/)
