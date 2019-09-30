@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="http://www.holbertonschool.com/holberton-logo.png"
        alt="Holberton School logo"
   >
