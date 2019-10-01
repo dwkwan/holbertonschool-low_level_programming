@@ -27,11 +27,6 @@
 ### [4. SUM](./4-sum.h)
 * A function-like macro SUM(x, y) that computes the sum of the numbers x and y.
 
-
-### [5. Worst abuse of the C preprocessor (IOCCC winner, 1986)](./101-preprocessor_abuse.c)
-* Compile this program, written by Jim Hague (UK), and feed ascii text into standard input.
-
-
 ---
 
 ## Author
