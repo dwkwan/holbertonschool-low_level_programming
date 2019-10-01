@@ -3,7 +3,7 @@
 ## Learning Objectives
 
 * What is the difference between automatic and dynamic allocation
-* What is malloc and free and how to use them
+* What are malloc and free, how to use them
 * Why and when to use malloc
 * How to use valgrind to check for memory leaks
 
