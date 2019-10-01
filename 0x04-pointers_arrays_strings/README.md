@@ -42,7 +42,7 @@
 * A function that prints half of a string, followed by a new line.
 
 
-### [8. Arrays are not pointers](./ 8-print_array.c)
+### [8. Arrays are not pointers](./8-print_array.c)
 * A function that prints n elements of an array of integers, followed by a new line.
 
 
