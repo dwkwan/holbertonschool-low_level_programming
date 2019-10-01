@@ -6,7 +6,7 @@
 
 # Low-Level Programming
 
-This repository contains scripts and programs during the Low Level programming portion of the Holberton School curriculum. In these projects, I learned C, basic data structures like arrays and linked lists, sorting algorithms, binary search trees, and much more. Here's the complete list of projects:
+This repository contains scripts and programs I wrote during the Low-Level Programming portion of the Holberton School curriculum. In these projects, I learned C, basic data structures like arrays and linked lists, sorting algorithms, binary search trees, and much more. Here's the complete list of projects:
 
 | Project |
 | :--- |
