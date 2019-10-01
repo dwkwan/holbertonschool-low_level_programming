@@ -26,10 +26,6 @@
 ### [4. _realloc](./100-realloc.c)
 * A function that reallocates a memory block using malloc and free
 
-
-### [5. We must accept finite disappointment, but never lose infinite hope](./101-mul.c)
-* A program that multiplies two positive numbers.
-
 ---
 
 ## Author
