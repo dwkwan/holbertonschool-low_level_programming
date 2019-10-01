@@ -32,10 +32,6 @@
 ### [5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe](./5-argstostr.c)
 * A function that concatenates all the arguments of your program.
 
-
-### [6. I will show you how great I am](./100-strtow.c)
-* A function that splits a string into words.
-
 ---
 
 ## Author
