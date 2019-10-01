@@ -10,7 +10,7 @@
 ### [0. A library is not a luxury but one of the necessities of life](./libholberton.a)
 * A static library named libholberton.a containing all the functions listed below:
 
-  * int _putchar(char c);
+   int _putchar(char c);
   * int _islower(int c);
   * int _isalpha(int c);
   * int _abs(int n);
