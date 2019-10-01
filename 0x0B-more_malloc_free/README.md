@@ -1,7 +1,6 @@
 # 0x0B. C - More malloc, free
 
-## Description
-What you should learn from this project:
+## Learning Objectives
 
 * How to use the exit function
 * What are the functions calloc and realloc from the standard library and how to use them
@@ -9,27 +8,27 @@ What you should learn from this project:
 ---
 
 ### [0. Trust no one](./0-malloc_checked.c)
-* Write a function that allocates memory using malloc.
+* A function that allocates memory using malloc.
 
 
 ### [1. string_nconcat](./1-string_nconcat.c)
-* Write a function that concatenates two strings.
+* A function that concatenates two strings.
 
 
 ### [2. _calloc](./2-calloc.c)
-* Write a function that allocates memory for an array, using malloc.
+* A function that allocates memory for an array, using malloc.
 
 
 ### [3. array_range](./3-array_range.c)
-* Write a function that creates an array of integers.
+* A function that creates an array of integers.
 
 
 ### [4. _realloc](./100-realloc.c)
-* Write a function that reallocates a memory block using malloc and free
+* A function that reallocates a memory block using malloc and free
 
 
 ### [5. We must accept finite disappointment, but never lose infinite hope](./101-mul.c)
-* Write a program that multiplies two positive numbers.
+* A program that multiplies two positive numbers.
 
 ---
 
