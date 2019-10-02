@@ -1,7 +1,6 @@
 # 0x19. C - Hash tables
 
-## Description
-What you should learn from this project:
+## Learning Objectives
 
 * What is a hash function
 * What makes a good hash function
@@ -13,35 +12,35 @@ What you should learn from this project:
 ---
 
 ### [0. >>> ht = {}](./0-hash_table_create.c)
-* Write a function that creates a hash table.
+* A function that creates a hash table.
 
 
 ### [1. djb2](./1-djb2.c)
-* Write a hash function implementing the djb2 algorithm.
+* A hash function implementing the djb2 algorithm.
 
 
 ### [2. key -> index](./2-key_index.c)
-* Write a function that gives you the index of a key.
+* A function that gives you the index of a key.
 
 
 ### [3. >>> ht['betty'] = 'holberton'](./3-hash_table_set.c)
-* Write a function that adds an element to the hash table.
+* A function that adds an element to the hash table.
 
 
 ### [4. >>> ht['betty']](./4-hash_table_get.c)
-* Write a function that retrieves a value associated with a key.
+* A function that retrieves a value associated with a key.
 
 
 ### [5. >>> print(ht)](./5-hash_table_print.c)
-* Write a function that prints a hash table.
+* A function that prints a hash table.
 
 
 ### [6. >>> del ht](./6-hash_table_delete.c)
-* Write a function that deletes a hash table.
+* A function that deletes a hash table.
 
 
 ### [7. $ht['Betty'] = 'Holberton'](./100-sorted_hash_table.c)
-* In PHP, hash tables are ordered. Wait… WAT? How is this even possible?
+* Functions that create and manage a sorted hashtable.
 
 ---
 
